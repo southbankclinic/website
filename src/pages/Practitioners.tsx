@@ -1,5 +1,9 @@
-
 const practitioners = [
+  {
+    name: "HUINA HUO",
+    image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04",
+    description: "Huina is a highly qualified and multi-disciplinary practitioner, having initially trained and worked as a beauty therapist, practicing bodywork such as Swedish massage and facial massage.Following this diverse foundation in therapy she then chose to pursue her true passion for Chinese medicine, graduating from the University of Westminster with a BSc (Hons) in Chinese medicine acupuncture."
+  },
   {
     name: "PROF. VOLKER SCHEID",
     image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
@@ -9,11 +13,6 @@ const practitioners = [
     name: "CINZIA SCORZON",
     image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
     description: "Cinzia graduated from the College of Traditional Acupuncture in Leamington Spa in 1984. Together with her husband Volker Scheid, she established the West Terapias clinic in Eastbourne. Her acupuncture course for complementary medicine, Running a busy practice for the next fifteen years Cinzia gained experience in treating a wide range of conditions and patients of all age groups."
-  },
-  {
-    name: "HUINA HUO",
-    image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04",
-    description: "Huina is a highly qualified and multi-disciplinary practitioner, having initially trained and worked as a beauty therapist, practicing bodywork such as Swedish massage and facial massage.Following this diverse foundation in therapy she then chose to pursue her true passion for Chinese medicine, graduating from the University of Westminster with a BSc (Hons) in Chinese medicine acupuncture."
   }
 ];
 
