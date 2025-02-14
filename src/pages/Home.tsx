@@ -19,6 +19,24 @@ const Home = () => {
         </div>
       </div>
 
+      {/* About Section */}
+      <div className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-light text-center mb-8">ABOUT THE CLINIC</h2>
+          <div className="max-w-3xl mx-auto text-gray-600 space-y-6">
+            <p>
+              The clinic @ southbank (previously the Traditional Acupuncture Centre) has been offering acupuncture, Chinese herbal medicine and related therapies to the Waterloo community for over 30 years.
+            </p>
+            <p>
+              Established in 1991 by Professors Volker Scheid and Dan Bensky, we are London's first dedicated Chinese medicine clinic and have treated thousands of patients over the years.
+            </p>
+            <p>
+              We maintain a commitment to classical East Asian medicine traditions while incorporating modern research and understanding to provide effective treatments for contemporary health issues.
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* Services Section */}
       <div className="py-16 container mx-auto">
         <div className="grid md:grid-cols-3 gap-8 px-4">
