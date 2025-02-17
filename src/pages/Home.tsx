@@ -77,10 +77,15 @@ const Home = () => {
             75 Roupell St, Southbank, London SE1 8SS
           </p>
           <div className="h-[400px] bg-gray-300">
-            {/* Google Maps would go here */}
-            <div className="w-full h-full flex items-center justify-center text-gray-500">
-              Map placeholder
-            </div>
+            <iframe
+              src="https://www.google.com/maps/embed/v1/place?q=GV3V+X2%20London"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              className="rounded-lg"
+            ></iframe>
           </div>
         </div>
       </div>
@@ -110,7 +115,7 @@ const Home = () => {
       <div className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-light text-center mb-8">THE CLINIC</h2>
-          
+
           {/* Text Section */}
           <div className="max-w-3xl mx-auto mb-12 text-gray-600 space-y-6">
             <p>
@@ -118,7 +123,7 @@ const Home = () => {
               Each of our treatment rooms is thoughtfully appointed to ensure your comfort and relaxation during your visit. Our clinic maintains the highest standards of hygiene and professional care, creating an ideal space for your healing journey.
             </p>
             <p>
-              If you wish to book an appointment, please direct all your enquiries to Huina on 020 7928 8333 or mail@southbankclinic.co.uk, thankyou. 
+              If you wish to book an appointment, please direct all your enquiries to Huina on 020 7928 8333 or mail@southbankclinic.co.uk, thankyou.
             </p>
           </div>
 
