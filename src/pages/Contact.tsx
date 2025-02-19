@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Mail, Phone, MapPin } from "lucide-react";
 
@@ -25,21 +24,21 @@ const Contact = () => {
             <h2 className="text-2xl font-light mb-8">Get in Touch</h2>
             <div className="space-y-6 mb-8">
               <div className="flex items-center space-x-4">
-                <Phone className="w-6 h-6 text-green-500" />
+                <Phone className="w-6 h-6 text-[#a4cd39]" />
                 <div>
                   <p className="font-medium">Phone</p>
                   <p className="text-gray-600">0207 928 8333</p>
                 </div>
               </div>
               <div className="flex items-center space-x-4">
-                <Mail className="w-6 h-6 text-green-500" />
+                <Mail className="w-6 h-6 text-[#a4cd39]" />
                 <div>
                   <p className="font-medium">Email</p>
                   <p className="text-gray-600">mail@southbankclinic.co.uk</p>
                 </div>
               </div>
               <div className="flex items-center space-x-4">
-                <MapPin className="w-6 h-6 text-green-500" />
+                <MapPin className="w-6 h-6 text-[#a4cd39]" />
                 <div>
                   <p className="font-medium">Address</p>
                   <p className="text-gray-600">75 Roupell St, London SE1 8SS</p>
@@ -78,7 +77,7 @@ const Contact = () => {
             </div>
             <button
               type="submit"
-              className="w-full bg-green-500 text-white py-3 rounded hover:bg-green-600 transition-colors"
+              className="w-full bg-[#a4cd39] text-white py-3 rounded hover:bg-[#93b933] transition-colors"
             >
               SUBMIT
             </button>
