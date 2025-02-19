@@ -1,4 +1,3 @@
-
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
@@ -12,7 +11,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="text-green-600 text-xl font-medium">
-            the clinic<br />@ southbank
+            <img src="/Logo.gif" alt="The Clinic at Southbank" className="h-12" />
           </Link>
           
           {/* Desktop Navigation */}

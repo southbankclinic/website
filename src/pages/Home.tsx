@@ -9,18 +9,23 @@ import {
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <div className="relative h-[60vh] bg-cover bg-center" style={{ backgroundImage: "url('/clinic_homeimg.jpg')" }}>
         <div className="absolute inset-0 bg-black bg-opacity-50">
           <div className="container mx-auto h-full flex flex-col justify-center items-center text-white">
-            <h1 className="text-5xl font-light mb-4" style={{ color: '#a4cd39', letterSpacing: '10px' }}>WELCOME</h1>
+            <h1 className="text-5xl font-light mb-8 tracking-[8px] text-[#a4cd39]">WELCOME</h1>
             <p className="text-xl text-center max-w-2xl mb-8">
-              THE CLINIC @ SOUTHBANK (PREVIOUSLY THE TRADITIONAL ACUPUNCTURE CENTRE) IS LONDON'S FIRST DEDICATED CLINIC FOR ACUPUNCTURE
+            The Clinic@Southbank (previously The Traditional Acupuncture Centre) is London's oldest specialist clinic for acupuncture.
             </p>
-            <Link to="/contact" className="bg-green-500 text-white px-8 py-3 rounded">
-              CONTACT US
-            </Link>
+            <div className="flex gap-4">
+              <Link to="/contact" className="bg-[#a4cd39] text-white px-8 py-3 rounded">
+                CALL
+              </Link>
+              <Link to="/contact" className="border border-white text-white px-8 py-3 rounded">
+                EMAIL US
+              </Link>
+            </div>
           </div>
         </div>
       </div>
@@ -28,7 +33,7 @@ const Home = () => {
       {/* About Section */}
       <div className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-light text-center mb-8">ABOUT THE CLINIC</h2>
+          <h2 className="text-3xl font-light text-center mb-8 tracking-[5px]">ABOUT THE CLINIC</h2>
           <div className="max-w-3xl mx-auto text-gray-600 space-y-6">
             <p>
             Founded in 1983, the Clinic re-opened under its new name in 2010. As London's premier centre of traditional East Asian and other forms of personalised medicine including different styles of acupuncture, traditional Chinese medicine (TCM), Japanese Kampo, tuina massage, Ayurveda and various forms of body work.
@@ -47,7 +52,7 @@ const Home = () => {
       <div className="py-16 container mx-auto">
         <div className="grid md:grid-cols-3 gap-8 px-4">
           <div className="text-center border border-[#dcebf7] rounded-[5px] p-4">
-            <h3 className="text-xl font-medium mb-4">ACUPUNCTURE</h3>
+            <h3 className="text-xl font-medium mb-4 tracking-[5px]">ACUPUNCTURE</h3>
             <p className="text-gray-600">
               This treatment consists of inserting fine needles into the skin often only very superficially. We only use sterilized disposable needles. Moxibustion uses various forms of gentle heat to stimulate acupuncture points; this is often combined with needling.
             </p>
@@ -69,10 +74,10 @@ const Home = () => {
       </div>
 
       {/* Location Section */}
-      <div className="bg-gray-100 py-16">
+      <div className="bg-[#192024] py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-light text-center mb-8">LOCATION</h2>
-          <p className="text-center mb-4">
+          <h2 className="text-3xl font-light text-center mb-8 text-white tracking-[5px]">LOCATION</h2>
+          <p className="text-center mb-4 text-white">
             The clinic is located near Waterloo or Southwark underground stations at:<br />
             75 Roupell St, Southbank, London SE1 8SS
           </p>
@@ -88,8 +93,8 @@ const Home = () => {
       {/* Our Practitioners Section */}
       <div className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-light text-center mb-8">OUR PRACTITIONERS</h2>
-          <div className="max-w-3xl mx-auto text-gray-600 space-y-6">
+          <h2 className="text-3xl font-light text-center mb-8 tracking-[5px]">OUR PRACTITIONERS</h2>
+          <div className="max-w-3xl mx-auto text-[#8e8e9c]-600 space-y-6">
             <p>
             We offer a wide range of treatments including acupuncture, Chinese herbal medicine, Kampo, tuina, physiotherapy, osteopathy and Ayurveda. We have some of the most experienced practitioners in Europe and patients come to visit us from all over the UK, the EU and beyond. We speak English, Chinese, German, Italian, Swedish and French.
             </p>
@@ -100,7 +105,7 @@ const Home = () => {
             All practitioners are members of their respective professional bodies and adhere to their codes of ethics and practice. Treatment is private but in certain situations may be reimbursable by your insurance. You are welcome to book a free chat or phone to find out how we might be able to help you.
             </p>
             <p>
-            We are very conscious of the health and safety of our patients and we are working strictly to the Public Health England and the British Acupuncture Council. If you have any questions get in touch, please.
+            We are very conscious of the health and safety of our patients and we are working strictly to the Public Health England and the British Acupuncture Council. If you have any questions, please do get in touch.
             </p>
           </div>
         </div>
@@ -109,7 +114,7 @@ const Home = () => {
       {/* The Clinic Section */}
       <div className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-light text-center mb-8">THE CLINIC</h2>
+          <h2 className="text-3xl font-light text-center mb-8 tracking-[5px]">THE CLINIC</h2>
           
           {/* Text Section */}
           <div className="max-w-3xl mx-auto mb-12 text-gray-600 space-y-6">

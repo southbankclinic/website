@@ -1,4 +1,3 @@
-
 const treatments = [
   {
     title: "ACUPUNCTURE",
@@ -25,6 +24,24 @@ const treatments = [
     prices: [
       { service: "First consultation & treatment (90 minutes)", price: "£150" },
       { service: "Follow-up sessions (60 minutes)", price: "£100" },
+    ]
+  },
+  {
+    title: "FERTILITY AND IVF SUPPORT",
+    image: "https://images.unsplash.com/photo-1516627145497-ae6968895b74",
+    prices: [
+      { service: "Initial consultation & treatment", price: "£120" },
+      { service: "Follow-up sessions", price: "£90" },
+      { service: "IVF support package (6 sessions)", price: "£480" },
+    ]
+  },
+  {
+    title: "WEIGHT LOSS SUPPORT",
+    image: "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38",
+    prices: [
+      { service: "Initial consultation & treatment", price: "£105" },
+      { service: "Follow-up sessions", price: "£85" },
+      { service: "Weight loss package (8 sessions)", price: "£600" },
     ]
   }
 ];
