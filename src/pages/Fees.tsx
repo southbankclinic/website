@@ -11,7 +11,7 @@ const treatments = [
   },
   {
     title: "HERBAL MEDICINE",
-    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
+    image: "/MedCab3.jpg",
     prices: [
       { service: "First consultation", price: "£150" },
       { service: "Follow-up consultation", price: "£80" },
@@ -50,9 +50,11 @@ const Fees = () => {
   return (
     <div className="min-h-screen bg-gray-50 py-16">
       <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-light text-center mb-4">TREATMENT FEES</h1>
-        <p className="text-center text-gray-600 max-w-3xl mx-auto mb-16">
-          Traditional East Asian medicines are diverse and different types of treatments are suited to different complaints and patients. Some emphasise eliminating pathogens and toxins from the body, while others primarily aim to strengthen a person's defences or energies.
+        <h1 className="text-4xl font-light text-center mb-4 tracking-[5px]">TREATMENT FEES</h1>
+        <p className="text-center text-[#6a859c] max-w1-1.5xl mx-auto mb-16">
+          Traditional East Asian medicines are diverse and different types of treatments are suited to different complaints and patients. Some emphasise eliminating pathogens and toxins from the body, while others primarily aim to strengthen a person's defences or energies. At times it is more suitable to focus on a patient's general constitution, at others it is more important to deal with a single illness or symptom. Drawing on a wide repertoire of traditions, therapies and techniques as well as modern research we will select those that are most suitable to your individual condition. Traditional East Asian medicines are diverse and different types of treatments are suited to different complaints and patients. Some emphasise eliminating pathogens and toxins from the body, while others primarily aim to strengthen a person's defences or energies. At times it is more suitable to focus on a patient's general constitution, at others it is more important to deal with a single illness or symptom. Drawing on a wide repertoire of traditions, therapies and techniques as well as modern research we will select those that are most suitable to your individual condition.
+
+          We believe that good health care should be available to everyone. For this reason we offer personalised expert treatments at highly competitive rates.
         </p>
 
         <div className="grid md:grid-cols-3 gap-8">

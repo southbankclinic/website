@@ -16,9 +16,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="container mx-auto px-4 py-16">
-        <h1 className="text-4xl font-light text-center mb-4">CONTACT US TODAY</h1>
-        <p className="text-center text-xl mb-16">75 Roupell St, Southbank London SE1 8SS</p>
-
+        <h1 className="text-4xl font-light text-center mb-16 tracking-[5px]">CONTACT US TODAY</h1>
         <div className="grid md:grid-cols-2 gap-16">
           <div>
             <h2 className="text-2xl font-light mb-8">Get in Touch</h2>

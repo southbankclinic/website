@@ -150,14 +150,6 @@ const Home = () => {
 
           <div className="max-w-2xl mx-auto space-y-8">
             <div>
-              <h3 className="text-xl font-medium mb-4 text-center">Opening Hours</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li className="text-center">Monday - Friday: 9:00 AM - 7:00 PM</li>
-                <li className="text-center">Saturday: 10:00 AM - 4:00 PM</li>
-                <li className="text-center">Sunday: Closed</li>
-              </ul>
-            </div>
-            <div>
               <h3 className="text-xl font-medium mb-4 text-center">Facilities</h3>
               <ul className="space-y-2 text-gray-600">
                 <li className="text-center">Wheelchair accessible</li>
