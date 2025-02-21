@@ -81,11 +81,16 @@ const Home = () => {
             The clinic is located near Waterloo or Southwark underground stations at:<br />
             75 Roupell St, Southbank, London SE1 8SS
           </p>
-          <div className="h-[400px] bg-gray-300">
-            {/* Google Maps would go here */}
-            <div className="w-full h-full flex items-center justify-center text-gray-500">
-              Map placeholder
-            </div>
+          <div className="h-[400px]">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.5476244304706!2d-0.11124812302821927!3d51.50427497181436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604a7c75b2d6f%3A0x5cc9e55676429c82!2s75%20Roupell%20St%2C%20London%20SE1%208SS%2C%20UK!5e0!3m2!1sen!2s!4v1709901234567!5m2!1sen!2s"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </div>
@@ -153,7 +158,6 @@ const Home = () => {
               <h3 className="text-xl font-medium mb-4 text-center">Facilities</h3>
               <ul className="space-y-2 text-gray-600">
                 <li className="text-center">Wheelchair accessible</li>
-                <li className="text-center">Air-conditioned treatment rooms</li>
                 <li className="text-center">Comfortable waiting area</li>
                 <li className="text-center">Private consultation rooms</li>
               </ul>
