@@ -19,12 +19,12 @@ const Home = () => {
             The Clinic@Southbank (previously The Traditional Acupuncture Centre) is London's oldest specialist clinic for acupuncture.
             </p>
             <div className="flex gap-4">
-              <Link to="/contact" className="bg-[#a4cd39] text-white px-8 py-3 rounded">
+              <a href="tel:02079288333" className="bg-[#a4cd39] text-white px-8 py-3 rounded">
                 CALL
-              </Link>
-              <Link to="/contact" className="border border-white text-white px-8 py-3 rounded">
+              </a>
+              <a href="mailto:mail@southbankclinic.co.uk" className="border border-white text-white px-8 py-3 rounded">
                 EMAIL US
-              </Link>
+              </a>
             </div>
           </div>
         </div>

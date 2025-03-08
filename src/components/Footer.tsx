@@ -29,8 +29,8 @@ const Footer = () => {
           
           <div className="space-y-4">
             <h3 className="text-lg font-medium">Opening Hours</h3>
-            <p>Monday - Friday: 9am - 6pm</p>
-            <p>Saturday: 10am - 4pm</p>
+            <p>Monday - Friday: 9am - 8:30pm</p>
+            <p>Saturday: 10am - 1pm</p>
             <p>Sunday: Closed</p>
           </div>
         </div>
