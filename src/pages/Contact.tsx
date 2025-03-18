@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Mail, Phone, MapPin } from "lucide-react";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -7,10 +8,50 @@ const Contact = () => {
     email: "",
     message: "",
   });
+  
+  const [error, setError] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
+    setError("");
+
+    // Validate all fields are filled
+    if (!formData.name || !formData.email || !formData.message) {
+      setError("Please fill in all fields");
+      return;
+    }
+
+    // Validate email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      setError("Please enter a valid email address");
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      await emailjs.send(
+        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
+        'template_n90i98s',
+        {
+          to_email: 'mail@southbankclinic.co.uk',
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+        },
+        'r6JcynhezWDiHMOMS' // EmailJS public key
+      );
+
+      // Reset form after successful submission
+      setFormData({ name: "", email: "", message: "" });
+      alert("Message sent successfully!");
+    } catch (error) {
+      setError("Failed to send message. Please try again later.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -25,14 +66,24 @@ const Contact = () => {
                 <Phone className="w-6 h-6 text-[#a4cd39]" />
                 <div>
                   <p className="font-medium">Phone</p>
-                  <p className="text-gray-600">0207 928 8333</p>
+                  <a 
+                    href="tel:02079288333"
+                    className="text-gray-600 hover:text-[#a4cd39] transition-colors"
+                  >
+                    0207 928 8333
+                  </a>
                 </div>
               </div>
               <div className="flex items-center space-x-4">
                 <Mail className="w-6 h-6 text-[#a4cd39]" />
                 <div>
                   <p className="font-medium">Email</p>
-                  <p className="text-gray-600">mail@southbankclinic.co.uk</p>
+                  <a 
+                    href="mailto:mail@southbankclinic.co.uk" 
+                    className="text-gray-600 hover:text-[#a4cd39] transition-colors"
+                  >
+                    mail@southbankclinic.co.uk
+                  </a>
                 </div>
               </div>
               <div className="flex items-center space-x-4">
@@ -46,6 +97,11 @@ const Contact = () => {
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-6">
+            {error && (
+              <div className="p-3 text-red-500 bg-red-50 rounded">
+                {error}
+              </div>
+            )}
             <div>
               <input
                 type="text"
@@ -75,9 +131,10 @@ const Contact = () => {
             </div>
             <button
               type="submit"
-              className="w-full bg-[#a4cd39] text-white py-3 rounded hover:bg-[#93b933] transition-colors"
+              disabled={isSubmitting}
+              className="w-full bg-[#a4cd39] text-white py-3 rounded hover:bg-[#93b933] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              SUBMIT
+              {isSubmitting ? "SENDING..." : "SUBMIT"}
             </button>
           </form>
         </div>
