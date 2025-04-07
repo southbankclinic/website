@@ -57,7 +57,7 @@ const Fees = () => {
 
         <div className="grid md:grid-cols-3 gap-8">
           {treatments.map((treatment, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow">
+            <div key={index} className="bg-white p-6 rounded-lg shadow-sm">
               <img 
                 src={treatment.image}
                 alt={treatment.title}
