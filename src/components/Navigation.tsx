@@ -7,7 +7,7 @@ const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   
   return (
-    <header className="bg-white shadow-sm relative">
+    <header className="bg-white shadow-xs relative">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="text-green-600 text-xl font-medium">
