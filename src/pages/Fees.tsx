@@ -41,22 +41,6 @@ const treatments = [
       { service: "Initial consultation & treatment", price: "£105" },
       { service: "Follow-up sessions", price: "£85" }
     ]
-  },
-  {
-    title: "FERTILITY AND IVF SUPPORT",
-    image: "https://images.unsplash.com/photo-1516627145497-ae6968895b74",
-    prices: [
-      { service: "Initial consultation & treatment", price: "£105" },
-      { service: "Follow-up sessions", price: "£85" },
-    ]
-  },
-  {
-    title: "WEIGHT LOSS SUPPORT",
-    image: "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38",
-    prices: [
-      { service: "Initial consultation & treatment", price: "£105" },
-      { service: "Follow-up sessions", price: "£85" }
-    ]
   }
 ];
 
