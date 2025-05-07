@@ -3,7 +3,7 @@ const treatments = [
     title: "ACUPUNCTURE",
     image: "/Acuimg.jpeg",
     prices: [
-      { service: "First consultation & treatment", price: "£105" },
+      { service: "First consultation & treatment", price: "£110" },
       { service: "Follow-up sessions", price: "£85" },
       { service: "Children (under 12) first consultation & treatment", price: "£80" },
       { service: "Children (under 12) follow up", price: "£65" },
@@ -22,8 +22,24 @@ const treatments = [
     title: "FACIAL ACUPUNCTURE",
     image: "/Facial.jpeg",
     prices: [
-      { service: "First consultation & treatment (90 minutes)", price: "£150" },
-      { service: "Follow-up sessions (60 minutes)", price: "£100" },
+      { service: "First consultation & treatment (90 minutes)", price: "£180" },
+      { service: "Follow-up sessions (60 minutes)", price: "£150" },
+    ]
+  },
+  {
+    title: "FERTILITY AND IVF SUPPORT",
+    image: "https://images.unsplash.com/photo-1516627145497-ae6968895b74",
+    prices: [
+      { service: "Initial consultation & treatment", price: "£105" },
+      { service: "Follow-up sessions", price: "£85" },
+    ]
+  },
+  {
+    title: "WEIGHT LOSS SUPPORT",
+    image: "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38",
+    prices: [
+      { service: "Initial consultation & treatment", price: "£105" },
+      { service: "Follow-up sessions", price: "£85" }
     ]
   },
   {
