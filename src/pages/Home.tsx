@@ -18,7 +18,7 @@ const Home = () => {
       <div className="min-h-screen bg-white">
         {/* Hero Section */}
         <div className="relative h-[60vh] bg-cover bg-center" style={{ backgroundImage: "url('/clinic_homeimg.jpg')" }}>
-          <div className="absolute inset-0 bg-black bg-opacity-50">
+          <div className="absolute inset-0 bg-black/50">
             <div className="container mx-auto h-full flex flex-col justify-center items-center text-white">
               <h1 className="text-5xl font-light mb-8 tracking-[8px] text-[#a4cd39]">WELCOME</h1>
               <p className="text-xl text-center max-w-2xl mb-8">
