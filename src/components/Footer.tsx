@@ -1,4 +1,3 @@
-
 import { Mail, Phone, MapPin } from "lucide-react";
 
 const Footer = () => {
@@ -14,7 +13,9 @@ const Footer = () => {
             </div>
             <div className="flex items-center space-x-2">
               <Mail className="w-4 h-4" />
-              <span>mail@southbankclinic.co.uk</span>
+              <a href="mailto:mail@southbankclinic.co.uk" className="hover:underline">
+                mail@southbankclinic.co.uk
+              </a>
             </div>
           </div>
           
