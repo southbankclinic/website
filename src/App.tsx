@@ -22,7 +22,7 @@ const App = () => (
       <BrowserRouter>
         <div className="flex flex-col min-h-screen">
           <Navigation />
-          <main className="flex-grow">
+          <main className="grow">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/contact" element={<Contact />} />
