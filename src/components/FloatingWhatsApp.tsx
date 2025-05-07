@@ -1,7 +1,7 @@
 import { Phone } from "lucide-react";
 
 const FloatingWhatsApp = () => {
-  const phoneNumber = "447988978668"; // Replace with your actual WhatsApp number
+  const phoneNumber = "447442516645"; // Replace with your actual WhatsApp number
   const message = "Hello! I would like to schedule an appointment."; // Default message
 
   const handleWhatsAppClick = () => {
