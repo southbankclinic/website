@@ -197,7 +197,7 @@ const Home = () => {
               Contact us on WhatsApp for appointments and inquiries.
             </p>
             <a
-              href="https://wa.me/447123456789" // Replace with actual WhatsApp business number
+              href="https://wa.me/447442516645" // Replace with actual WhatsApp business number
               className="block w-full bg-[#25D366] text-white text-center py-2 rounded-md hover:bg-[#128C7E] transition-colors duration-300"
               target="_blank"
               rel="noopener noreferrer"
