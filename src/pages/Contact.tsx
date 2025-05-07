@@ -33,7 +33,7 @@ const Contact = () => {
 
     try {
       await emailjs.send(
-        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
+        'service_b528c7o', // Replace with your EmailJS service ID
         'template_n90i98s',
         {
           to_email: 'mail@southbankclinic.co.uk',
